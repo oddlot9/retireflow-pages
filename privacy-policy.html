@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RetireFlow — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+    header {
+      background: #1c3a6e;
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { font-size: 14px; color: rgba(255,255,255,0.75); margin-top: 6px; }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1c3a6e;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 14px;
+    }
+    p { font-size: 15px; color: #3a3a3c; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #3a3a3c; margin-bottom: 6px; }
+    .chip {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1c3a6e;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #86868b;
+      padding: 0 24px 48px;
+    }
+    a { color: #1c3a6e; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RetireFlow</h1>
+  <p>Privacy Policy &mdash; Last Updated: April 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      RetireFlow is designed with a <strong>Privacy-First</strong> architecture. Your financial planning data
+      stays on your device. The Developer does not operate a server, does not collect your personal financial
+      information, and does not sell or share your data.
+    </p>
+    <p>
+      This policy describes what data the App stores locally, what limited data is transmitted when you use
+      optional features, and how third-party service providers handle their respective data.
+    </p>
+  </section>
+
+  <section>
+    <h2>1. Data Stored Locally on Your Device</h2>
+    <p>All financial planning data you enter is stored exclusively on your device using your phone&rsquo;s
+       local storage (iOS: NSUserDefaults / AsyncStorage). The Developer has no access to this data.</p>
+    <p><strong>What is stored locally:</strong></p>
+    <ul>
+      <li>First name and last name (entered at first launch for legal acceptance record)</li>
+      <li>Date of birth</li>
+      <li>Financial planning inputs: income, balances, asset allocations, goals, assumptions</li>
+      <li>Saved scenarios (up to 5 slots)</li>
+      <li>App settings and preferences</li>
+      <li>Legal acceptance timestamp and version</li>
+    </ul>
+    <p>
+      <strong>No Cloud Sync:</strong> Because all data is stored locally, the Developer cannot recover
+      your data if the App is deleted or the device is lost. You are responsible for any manual backups.
+    </p>
+    <p>
+      <strong>Your AI API key</strong> (if you enable the optional AI Observations feature) is stored
+      in your device&rsquo;s secure keychain (iOS Keychain), not in plain local storage.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Optional AI Features</h2>
+    <span class="chip">Optional &mdash; User-Enabled</span>
+    <p>
+      If you enable the AI Observations feature and provide your own API key (BYOK &mdash; Bring Your Own Key),
+      the App will transmit data directly from your device to the AI provider you select
+      (Google Gemini, OpenAI, or Anthropic). The Developer does not proxy, store, or have access to
+      these transmissions.
+    </p>
+    <p><strong>What is sent to the AI provider:</strong></p>
+    <ul>
+      <li>An <em>anonymized</em> financial projection summary: your residency, approximate ages,
+          rounded dollar aggregates, asset allocation percentages, decade-level projection snapshots,
+          Monte Carlo percentiles, and planning assumptions. No names, email addresses, or
+          birthdates are included in this payload.</li>
+      <li>Your typed chat messages (up to 500 characters per turn). You should avoid typing personally
+          identifiable information into the chat.</li>
+    </ul>
+    <p>
+      Data transmitted to AI providers is governed by their respective privacy policies and terms of service,
+      not by RetireFlow. You are responsible for any API costs incurred. You may disable AI features at any
+      time in the App&rsquo;s Settings screen.
+    </p>
+    <ul>
+      <li>Google Gemini: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li>OpenAI: <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
+      <li>Anthropic: <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy Policy</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Subscriptions &amp; In-App Purchases (RevenueCat)</h2>
+    <span class="chip">Third-Party Service</span>
+    <p>
+      RetireFlow uses RevenueCat to manage in-app subscriptions and purchases. When you make a purchase,
+      RevenueCat receives:
+    </p>
+    <ul>
+      <li>An anonymous device identifier generated by RevenueCat</li>
+      <li>Your subscription entitlement status (free or premium)</li>
+    </ul>
+    <p>
+      Your financial planning data is <strong>never</strong> transmitted to RevenueCat or Apple as part
+      of the purchase process. All billing is handled by Apple Media Services under your Apple ID.
+    </p>
+    <p>
+      RevenueCat Privacy Policy:
+      <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>4. No Analytics or Crash Reporting</h2>
+    <p>
+      RetireFlow does not include any third-party analytics, telemetry, advertising, crash-reporting SDKs
+      (such as Firebase, Sentry, Amplitude, or Mixpanel). The Developer does not receive usage statistics
+      or diagnostic reports from the App.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Data Retention</h2>
+    <p>
+      Your locally stored data persists on your device until you delete the App or clear its storage.
+      No data is retained on any server operated by the Developer.
+    </p>
+    <p>
+      AI chat history is held in device memory only for the duration of the current session and is not
+      written to persistent storage.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Children&rsquo;s Privacy</h2>
+    <p>
+      RetireFlow is designed for adults planning for retirement. The App does not knowingly collect
+      information from children under the age of 13.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      The Developer may update this Privacy Policy from time to time. The &ldquo;Last Updated&rdquo; date
+      at the top of this page reflects the most recent revision. Continued use of the App following any
+      update constitutes acceptance of the revised policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Contact</h2>
+    <p>
+      For privacy-related questions or concerns, please refer to the support contact information listed
+      in the RetireFlow App Store listing.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 RetireFlow. All rights reserved.</p>
+  <p style="margin-top:6px;">
+    This Privacy Policy applies to the RetireFlow iOS application (Bundle ID: com.otsuki.RetireFlow).
+  </p>
+</footer>
+
+</body>
+</html>
